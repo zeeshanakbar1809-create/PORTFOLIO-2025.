@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeeshan Akbar — Portfolio 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#e8e0d0;min-height:100vh;padding-bottom:4rem}
+  .za-hero{padding:5rem 2rem 3rem;text-align:center;border-bottom:0.5px solid rgba(200,180,130,0.2)}
+  .za-eyebrow{font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(200,180,130,0.6);margin-bottom:1.2rem}
+  .za-name{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,7vw,5rem);font-weight:300;color:#e8e0d0;line-height:1.05;letter-spacing:0.02em}
+  .za-name span{color:#c8b482}
+  .za-tagline{font-size:13px;font-weight:300;color:rgba(232,224,208,0.5);margin-top:1rem;letter-spacing:0.08em}
+  .za-divider{width:40px;height:1px;background:rgba(200,180,130,0.4);margin:2rem auto}
+  .za-stats{display:flex;justify-content:center;gap:3rem;margin-top:2rem}
+  .za-stat{text-align:center}
+  .za-stat-n{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:400;color:#c8b482}
+  .za-stat-l{font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(232,224,208,0.4);margin-top:2px}
+  .za-section{padding:3rem 2rem 0}
+  .za-section-title{font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(200,180,130,0.5);margin-bottom:1.5rem;padding-bottom:0.75rem;border-bottom:0.5px solid rgba(200,180,130,0.15)}
+  .za-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:rgba(200,180,130,0.12)}
+  .za-card{background:#0a0a0a;padding:1.25rem 1.5rem;cursor:pointer;transition:background 0.2s;text-decoration:none;display:block}
+  .za-card:hover{background:#111}
+  .za-card-label{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,180,130,0.45);margin-bottom:0.5rem}
+  .za-card-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;color:#e8e0d0;line-height:1.3;margin-bottom:0.4rem}
+  .za-card-meta{font-size:11px;color:rgba(232,224,208,0.35);display:flex;align-items:center;gap:6px}
+  .za-card-meta i{font-size:12px;color:rgba(200,180,130,0.4)}
+  .za-folder-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:rgba(200,180,130,0.12)}
+  .za-folder{background:#0a0a0a;padding:1.25rem 1.5rem;cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center}
+  .za-folder:hover{background:#111}
+  .za-folder i{font-size:24px;color:rgba(200,180,130,0.5)}
+  .za-footer{text-align:center;padding:3rem 2rem 0;border-top:0.5px solid rgba(200,180,130,0.12);margin-top:3rem}
+  .za-footer-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:rgba(200,180,130,0.5)}
+  .za-cta{display:inline-block;margin-top:1.5rem;padding:10px 28px;border:0.5px solid rgba(200,180,130,0.4);font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#c8b482;cursor:pointer;transition:all 0.2s;background:transparent;text-decoration:none}
+  .za-cta:hover{background:rgba(200,180,130,0.08)}
+</style>
+</head>
+<body>
+
+<div class="za-hero">
+  <div class="za-eyebrow">Video Production Portfolio</div>
+  <h1 class="za-name">Zeeshan <span>Akbar</span></h1>
+  <div class="za-tagline">Cinematographer &nbsp;·&nbsp; Videographer &nbsp;·&nbsp; Visual Storyteller</div>
+  <div class="za-divider"></div>
+  <div class="za-stats">
+    <div class="za-stat"><div class="za-stat-n">20+</div><div class="za-stat-l">Projects</div></div>
+    <div class="za-stat"><div class="za-stat-n">2025</div><div class="za-stat-l">Current</div></div>
+    <div class="za-stat"><div class="za-stat-n">∞</div><div class="za-stat-l">Frames</div></div>
+  </div>
+</div>
+
+<div class="za-section">
+  <div class="za-section-title">Featured Works</div>
+  <div class="za-grid" id="videos-grid"></div>
+</div>
+
+<div class="za-section" style="margin-top:2rem">
+  <div class="za-section-title">Collections</div>
+  <div class="za-folder-grid">
+    <div class="za-folder"><i class="ti ti-folder"></i></div>
+    <div class="za-folder"><i class="ti ti-folder"></i></div>
+  </div>
+</div>
+
+<div class="za-footer">
+  <div class="za-footer-name">Zeeshan Akbar</div>
+  <div style="font-size:11px;color:rgba(232,224,208,0.3);margin-top:4px;letter-spacing:0.1em">zeeshanakbar1809@gmail.com</div>
+  <a class="za-cta" href="mailto:zeeshanakbar1809@gmail.com">Get in touch</a>
+</div>
+
+<script>
+const videos = [
+  {title:"Ahmed Ali Akbar",label:"Commercial",size:"547 MB",id:"1Ao448XJB4sH0BWpwhuVF0poSH6BGgLl6"},
+  {title:"ADC Documentary",label:"Documentary",size:"622 MB",id:"1W8m5Xea75uzOy8crTSkwbttptM5kqgVO"},
+  {title:"Omar & Hafsa",label:"Event Film",size:"1 GB",id:"1AKD15NPd9R2hd5M-pyihERygLZebzygJ"},
+  {title:"Rapid Fire Edit",label:"Edit Reel",size:"723 MB",id:"1kAo493axsOLJHFes4xv_b1yk-GMvEFo3"},
+  {title:"Podcast 01",label:"Podcast",size:"4.2 GB",id:"1TYHYrKo22KoLbDTdIckhrkx-t6yzDadn"},
+  {title:"Printkraft",label:"Brand Film",size:"358 MB",id:"1rmr3Ff5a0nwhmOhERHZhzXfWqm87Q5K1"},
+  {title:"Tour Film",label:"Travel",size:"139 MB",id:"12QCq1aoSpw9uP0617YkIVCa9ZheV6VA4"},
+  {title:"Character Introduction",label:"Narrative",size:"108 MB",id:"1JkNwTtsfSqlWfcd08gFoBgLfRrUX0-nX"},
+  {title:"SaniPlast AD",label:"Commercial",size:"116 MB",id:"1fPc0qVcTKT7iuJG_K3ma-bhpArI_xCIR"},
+  {title:"Photo Walk",label:"Cinematic",size:"113 MB",id:"1AHjwmGSHaiAPsJbc8d222KmjeJjV2nR4"},
+  {title:"Collabs Video",label:"Collab",size:"106 MB",id:"1BXEMgX-8QT0a3ZSbKmjCeGrBv9OMZQQD"},
+  {title:"Double Exposure Reel",label:"FX Reel",size:"44 MB",id:"15E8yC4NCk5p4-lhsr4i2td5Vc0OhMO6_"},
+  {title:"Seq 2",label:"Sequence",size:"53 MB",id:"158UM8hySDLyxTpLoblO7uvUbpA0YS9Od"},
+  {title:"Jolta Coffee Run Reel",label:"Brand",size:"23 MB",id:"1RtpJrqZW7HJT4yBDJaVb8WqJgm5rlSFQ"},
+  {title:"Jolta Split Screen",label:"Brand",size:"18 MB",id:"1dXuIt53kmsbriknZ8p9ZR_Y0XPudW1at"},
+  {title:"Story Boarding – Life's Little Champion",label:"Storyboard",size:"6.8 MB",id:"1FN0RIYGD6cHE6N_LAG-j70nhLpflo0zr"},
+  {title:"Noyr FF",label:"Film",size:"109 MB",id:"150IQDQaiLOF8tNiriwFRpYL6vuYI8yv-"},
+  {title:"C0001",label:"Raw Footage",size:"238 MB",id:"13tyz5TQC4Qp_vSFcOQk8h9PjJ1zYIt1y"},
+];
+const grid = document.getElementById('videos-grid');
+videos.forEach(v => {
+  const a = document.createElement('a');
+  a.className = 'za-card';
+  a.href = `https://drive.google.com/file/d/${v.id}/view`;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.innerHTML = `<div class="za-card-label">${v.label}</div><div class="za-card-title">${v.title}</div><div class="za-card-meta"><i class="ti ti-video"></i>${v.size}</div>`;
+  grid.appendChild(a);
+});
+</script>
+</body>
+</html>
